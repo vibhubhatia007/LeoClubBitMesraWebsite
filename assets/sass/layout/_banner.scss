@@ -21,14 +21,14 @@
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
-			@include vendor('transition-delay', '0.75s');
+			@include vendor('transition-delay', '0.05s');
 			@include vendor('pointer-events', 'none');
-			background-color: _palette(bg);
+			background-color:  #fff;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 1.0;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -99,12 +99,12 @@
 			}
 		}
 
-		&.style1 { &:after { background-color: _palette(accent1); } }
-		&.style2 { &:after { background-color: _palette(accent2); } }
-		&.style3 { &:after { background-color: _palette(accent3); } }
-		&.style4 { &:after { background-color: _palette(accent4); } }
-		&.style5 { &:after { background-color: _palette(accent5); } }
-		&.style6 { &:after { background-color: _palette(accent6); } }
+		&.style1 { &:after { background-color:  #fff; } }
+		&.style2 { &:after { background-color:  #fff; } }
+		&.style3 { &:after { background-color:  #fff; } }
+		&.style4 { &:after { background-color:  #fff; } }
+		&.style5 { &:after { background-color:  #fff; } }
+		&.style6 { &:after { background-color:  #fff; } }
 
 		body.is-preload & {
 			&:after {
